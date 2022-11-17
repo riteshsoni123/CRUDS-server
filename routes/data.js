@@ -18,4 +18,8 @@ router.route("/editelement/:id").post(editElement);
 
 router.route("/sendemail").post(sendMail);
 
+router.route("/").get((req, res) => {
+  return res.status(200).send({ msg: "App started" });
+});
+
 module.exports = router;
