@@ -13,7 +13,7 @@ app.use(Cors());
 app.use("/", require("./routes/data"));
 app.use("/api/data", require("./routes/data"));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`App is listening at http://localhost:${PORT}`);

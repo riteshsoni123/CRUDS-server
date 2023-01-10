@@ -62,7 +62,7 @@ exports.sendMail = async (req, res, next) => {
   console.log(message);
   try {
     await sendEmail({
-      to: "info@redpositive.im",
+      to: process.env.EMAIL_TO,
       subject: "Information of the people",
       text: message,
     });
